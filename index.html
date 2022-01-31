@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class='middle'>
+            <h1 id='texthere'>TEXT WILL BE HERE</h1>
+            <input type="text" id="input1" />
+            <button onclick="myJsFunction()">CLICK</button>
+        </div>
+        <script type="text/javascript">
+            
+            
+            function myJsFunction(){
+                var text=document.getElementById('input1').value.toLowerCase();
+                document.getElementById('texthere').innerHTML = text.replace(/u/g, "oo");
+            }
+            
+            
+            
+            
+        </script>
+    </body>
+</html>
